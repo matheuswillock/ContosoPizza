@@ -33,7 +33,7 @@ namespace ContosoPizza.Services
         }
 
         // Delete
-        public void Delete(int id) 
+        public static void Delete(int id) 
         {
             var pizza = Get(id);
 
@@ -43,7 +43,7 @@ namespace ContosoPizza.Services
         }
 
         // Update
-        public void Update(Pizza pizza)
+        public static void Update(Pizza pizza)
         {
             var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
 
